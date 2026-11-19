@@ -9,6 +9,9 @@
 </head>
 <body>
 
+    <!-- Fireworks canvas -->
+    <canvas id="fireworks"></canvas>
+
     <div class="quiz-container">
         <h1>DevOps Challenge</h1>
         <p>Test your knowledge of GitHub, Docker, and VS Code!</p>
@@ -26,12 +29,20 @@
             <p id="feedback"></p>
             <p id="progress"></p>
 
-            <button id="next-btn">Next Question</button>
+            <button id="next-btn" class="hidden">Next Question</button>
         </div>
 
         <div id="result" class="hidden">
             <h2>Quiz Completed!</h2>
             <p id="score"></p>
+
+            <!-- Trophy appears only when score is greater than 7 -->
+            <div id="trophy" class="hidden">
+                <div class="trophy-icon">🏆</div>
+                <h2>Congratulations!</h2>
+                <p>You are a DevOps Champion!</p>
+            </div>
+
             <button id="restart-btn">Play Again</button>
         </div>
     </div>
